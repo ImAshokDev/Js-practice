@@ -1,0 +1,35 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>JavaScript practice</h1>
+    <script>
+      // function fisrtFunc(secFunc) {
+      //   console.log("first");
+
+      //   secFunc();
+
+      //   console.log("third");
+      // }
+
+      // fisrtFunc(secondFunc);
+
+      // function secondFunc() {
+      //   setTimeout(() => {
+      //     console.log("second");
+      //   }, 3000);
+      // }
+
+      var promise = new Promise(function (resolve, reject) {
+        resolve([1, 2, 3, 4]);
+      });
+
+      promise.then(function (data) {
+        console.log("jssss", data);
+      });
+    </script>
+  </body>
+</html>
