@@ -7,3 +7,4 @@
 5. callback with anonymous Func
 6. Promise
 7. Promise Chain
+8. Async and await
