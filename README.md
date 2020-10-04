@@ -4,5 +4,6 @@
 2. Asynchronous Func
 3. CallBack Func
 4. forEach Func
-5. Promise
-6. Promise Chain
+5. callback with anonymous Func
+6. Promise
+7. Promise Chain
