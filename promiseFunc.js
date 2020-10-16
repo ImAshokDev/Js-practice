@@ -69,18 +69,64 @@
 //   });
 
 // promise chain
-var promise = new Promise(function (resolve, reject) {
-  resolve(5);
+// var promise = new Promise(function (resolve, reject) {
+//   resolve(5);
+// });
+// promise
+//   .then(function (data) {
+//     console.log("result.....1", data);
+//     return data * 2;
+//   })
+//   .then(function (data) {
+//     console.log("result.....2", data);
+//     return data * 2;
+//   })
+//   .then((data) => {
+//     console.log("result.....3", data);
+//   });
+
+// promise resolve
+// const hasMeeting = false;
+
+// const meeting = new Promise((resolve, reject) => {
+//   if (!hasMeeting) {
+//     const meetingDetails = {
+//       name: "Technial Meeting",
+//       location: "Zoom",
+//       time: "06.00 PM",
+//     };
+
+//     resolve(meetingDetails);
+//   } else {
+//     reject(new Error("rejectedddd"));
+//   }
+// });
+
+// const addCalender = (meetingDetails) => {
+//   return new Promise((resolve, reject) => {
+//     const calender = "meeting success";
+//     resolve(calender);
+//   });
+// };
+
+// meeting
+//   .then(addCalender)
+//   .then((res) => {
+//     console.log("outtt   =", res);
+//   })
+//   .catch((err) => {
+//     console.log("errorrr =  ", err);
+//   });
+
+// Promise.all
+
+const a1 = Promise.resolve("ashok done 1");
+const a2 = new Promise((resolve) => {
+  setTimeout(() => {
+    resolve("Promise 2 done");
+  }, 2000);
 });
-promise
-  .then(function (data) {
-    console.log("result.....1", data);
-    return data * 2;
-  })
-  .then(function (data) {
-    console.log("result.....2", data);
-    return data * 2;
-  })
-  .then((data) => {
-    console.log("result.....3", data);
-  });
+
+Promise.all([a2, a1]).then((res) => {
+  console.log(res);
+});
