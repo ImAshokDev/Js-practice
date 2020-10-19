@@ -8,3 +8,6 @@
 6. Promise
 7. Promise Chain
 8. Async and await
+9. Loops: for , while, do-while
+10. switch case
+11. try-catch
