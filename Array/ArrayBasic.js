@@ -46,7 +46,18 @@
 // console.log('METHOD=3 filter()', testArr)
 
 /* <=== FIND ===> */
-const words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'];
+// const words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'];
 
-const testArr = words.find(el=>el.length<8)
+// const testArr = words.find(el=>el.length<8)
+// console.log('METHOD=3 find()', testArr)
+const inventory = [
+    {name: 'apples', quantity: 2},
+    {name: 'bananas', quantity: 3},
+    {name: 'cherries', quantity: 5}
+  ];
+
+  const testArr = inventory.find(({name})=>{
+   const list = name==="bananas"
+    return list
+  })
 console.log('METHOD=3 find()', testArr)
