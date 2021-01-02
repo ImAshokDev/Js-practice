@@ -32,9 +32,21 @@
 
 /* <=== FILL ===> */
 
-const array1 = [1, 2, 3, 4, 5];
+// const array1 = [1, 2, 3, 4, 5];
 
 // const testArr=array1.fill(0)
-console.log('METHOD=1 fill()', array1.fill(0,1,4))
-console.log('METHOD=2 fill()', array1.fill(0,1))
-console.log('METHOD=3 fill()', array1.fill(0))
+// console.log('METHOD=1 fill()', array1.fill(0,1,4))
+// console.log('METHOD=2 fill()', array1.fill(0,1))
+// console.log('METHOD=3 fill()', array1.fill(0))
+
+/* <=== FILTER ===> */
+// const words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'];
+
+// const testArr=words.filter(el=> el.length>5)
+// console.log('METHOD=3 filter()', testArr)
+
+/* <=== FIND ===> */
+const words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'];
+
+const testArr = words.find(el=>el.length<8)
+console.log('METHOD=3 find()', testArr)
