@@ -50,14 +50,22 @@
 
 // const testArr = words.find(el=>el.length<8)
 // console.log('METHOD=3 find()', testArr)
-const inventory = [
-    {name: 'apples', quantity: 2},
-    {name: 'bananas', quantity: 3},
-    {name: 'cherries', quantity: 5}
-  ];
+// const inventory = [
+//     {name: 'apples', quantity: 2},
+//     {name: 'bananas', quantity: 3},
+//     {name: 'cherries', quantity: 5}
+//   ];
 
-  const testArr = inventory.find(({name})=>{
-   const list = name==="bananas"
-    return list
-  })
-console.log('METHOD=3 find()', testArr)
+//   const testArr = inventory.find(({name})=>{
+//    const list = name==="bananas"
+//     return list
+//   })
+// console.log('METHOD=3 find()', testArr)
+
+/* <=== FLAT ===> */
+const a1 = [1, 2, 3, [10, 11]];
+console.log("METHOD flat()", a1.flat(2));
+
+const a2 = [1, 2, 3, [[10, 11]]];
+
+console.log("METHOD flat()", a2.flat(1));
