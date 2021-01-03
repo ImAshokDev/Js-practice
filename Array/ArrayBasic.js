@@ -63,9 +63,19 @@
 // console.log('METHOD=3 find()', testArr)
 
 /* <=== FLAT ===> */
-const a1 = [1, 2, 3, [10, 11]];
-console.log("METHOD flat()", a1.flat(2));
+// const a1 = [1, 2, 3, [10, 11]];
+// console.log("METHOD flat()", a1.flat(2));
 
-const a2 = [1, 2, 3, [[10, 11]]];
+// const a2 = [1, 2, 3, [[10, 11]]];
 
-console.log("METHOD flat()", a2.flat(1));
+// console.log("METHOD flat()", a2.flat(1));
+
+/* <=== FLATMAP ===> */
+const a1 = [1, 2, 3];
+const a2 = a1.flatMap((x) => [x, x * 2]);
+const a3 = a1.reduce((acc, val) => {
+  console.log(acc, val)
+ return acc.concat([val, val * 2])
+}, []);
+
+console.log("METHOD flatMap()", a2, a3);
