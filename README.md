@@ -11,3 +11,5 @@
 9. Loops: for , while, do-while
 10. switch case
 11. try-catch
+
+[String Method](./src/StringMethod.js)
